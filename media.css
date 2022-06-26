@@ -1,0 +1,77 @@
+/*--------media query for menu button-------*/
+@media only screen and (max-width: 1000px) {
+.logo {
+    flex: 1;
+}
+    .toggle {
+        position: absolute;
+        padding: 0 20px;
+        top: 70px;
+        left: 0;
+        background: #343a40;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.7s ease-in-out;
+        z-index: 1;
+    }
+    .navlinks ul {
+        display: block;
+        margin: 0;
+    }
+    .navlinks ul li {
+        padding: 15px;
+    }
+    .toggle{
+        display: block;
+        text-align: center;
+        margin: 10px 50px 10px 0;
+    }
+    .toggle .icons {
+        display: block;
+        padding: 10px ;
+        margin: 0 0 10px 0;
+    }
+    .icons a {
+        margin: 0;
+    }
+    .toggle .icons ion-icon {
+        position: relative;
+        top: 6px;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+/*-------------Media for Discount Menu-----------*/
+@media only screen and (max-width: 1000px) {
+    .title {
+        font-size: 20px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .photo {
+        width: 200px;
+    }
+}
+/*-------------Media for Mini about-----------*/
+@media only screen and (max-width: 1000px) {
+    .row-2 {
+        flex-flow: wrap-reverse;
+    }
+    .box-3 h1 {
+        font-size: 50px;
+    }
+    .box-3 p {
+        font-size: 14px;
+    }
+}

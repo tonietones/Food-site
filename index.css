@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color-1: #fff;
+    --text-color-2: #343a40;
+    --background-color-1: #343a40;
+    --background-color-2: #f1f2f3;
+    --button-color: #ffc107;
+    --button-color-2: #ad8610;
+    --font-1: 'Open Sans', sans-serif;
+    --font-2: 'Dancing Script', cursive;
+}
+body {
+    color: var(--text-color-1);
+    font-size: 16px;
+    font-family: var(--font-1);
+}
+
+/* Navbar and header */
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color-1);
+    font-weight: 600;
+}
+header {
+    background-image: url(./images/hero-bg.jpg);
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 25px 0 25px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    font-family: var(--font-2);
+    font-size: 40px;
+} 
+.toggle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.navlinks {
+    flex: 1;
+}
+.navlinks ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 130px;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks ul li a {
+    padding: 5px 20px;
+    transition: 0.5s ease;
+}
+.navlinks ul li a:hover {
+    color: var(--button-color);
+}
+.icons a {
+    margin: 10px;
+}
+.icons ion-icon{
+    transition: 0.3s ease;
+    font-size: 18px;
+    padding: 5px;
+}
+.icons ion-icon:hover {
+    color: var(--button-color);
+}
+.order {
+    background-color: var(--button-color);
+    border: 1px solid transparent;
+    padding: 7px 25px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+.order:hover {
+    background-color: var(--button-color-2);
+}
+.menu-icon {
+    display: none;
+    text-align: right;
+    font-size: 50px;
+        position: relative;
+        top: 5px;
+}
+.intro {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.intro-text{
+    max-width: 600px;
+    padding: 25px;
+    margin-bottom: 200px;
+}
+.intro-text h1 {
+    font-family: var(--font-2);
+    font-size: 60px;
+}
+.intro-text p {
+    margin: 50px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* END OF NAVBAR AND HEADER */
+
+/*--------------Discount Menu-----------*/
+.container-2 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+.title {
+    font-family: var(--font-2);
+    color: var(--text-color-2);
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+    position: relative;
+}
+.title::after {
+    content: '';
+    height: 6px;
+    border-radius: 30px;
+    background-color:  var(--text-color-2);
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box {
+    background-color: var(--background-color-1);
+    margin-bottom: 30px;
+    min-width: 200px;
+    flex-basis: 49%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.photo {
+    padding: 10px 20px;
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.photo img {
+    width: 80%;
+    border-radius: 100%;
+    border: 5px solid var(--button-color);
+    transition: 0.5s ease;
+}
+.photo img:hover {
+    transform: scale(1.1);
+}
+.content {
+    padding:0  20px;
+    flex-basis: 60%;
+}
+.content h3 {
+    font-family: var(--font-2);
+    font-size: 40px;
+    margin: 20px 0;
+}
+.content p {
+    font-size: 20px;
+    font-family: var(--font-2);
+}
+.button {
+    margin: 50px 0;
+}
+.button ion-icon {
+    position: relative;
+    bottom: -3px;
+    font-size: 18px;
+}
+
+/*-------------Mini Menu-----------*/
+.box-2 {
+    max-width: 300px;
+    flex-basis: 30%;
+    background-color: var(--text-color-2);
+    border-radius: 30px 30px 10px 10px;
+    margin: 40px 0;
+    border: none;
+    outline: none;
+}
+.img-menu {
+    background-color: var(--background-color-2);
+    padding: 20px;
+    border-radius: 20px 20px 0 30px;
+    text-align: center;
+}
+.img-menu img {
+    width: 50%;
+    transition: 0.5s ease;
+}
+.img-menu .small-img {
+    width: 62%;
+}
+.img-menu img:hover {
+    transform: scale(1.1);
+}
+.text {
+    padding: 20px 20px 0px 20px;
+}
+.text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.text p {
+    font-size: 13px;
+}
+.amount {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.amount p {
+    flex: 1;
+}
+.amount a {
+    padding: 8px 10px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+    text-align: center;
+}
+.amount a:hover {
+    background-color: var(--button-color-2);
+}
+.amount a ion-icon {
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+.menu-button {
+    margin: 20px 0;
+    text-align: center;
+}
+/*-------------end of mini menu-----------*/
+
+/*-------------mini about-----------*/
+aside {
+    background-color: var(--background-color-1);
+}
+.row-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box-3 {
+    min-width: 300px;
+    flex-basis: 50%;
+}
+.box-3 img {
+    max-width: 100%;
+    padding: 80px;
+    transition: 0.5s;
+}
+.box-3 img:hover {
+    transform: translateY(-10px);
+}
+.box-3 h1 {
+    font-size: 70px;
+    line-height: 60px;
+    margin: 25px 0;
+    font-family: var(--font-2);
+}
+.box-3 p {
+    font-size: 16px;
+}
+.box-3 .mini-button {
+    margin: 30px 0;
+}
+
+
+/*-------------CUSTOMER REVIEW-----------*/
+.box-4 {
+    flex-basis: 30%;
+    background-color: var(--background-color-1);
+    max-width: 300px;
+    margin: 40px 0;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: .5s;
+}
+.box-4:hover {
+    transform: translateY(-10px);
+}
+.box-4 img {
+    width: 70px;
+    border-radius: 50%;
+    margin: 30px 0 0 0;
+}
+.box-4 p {
+    margin: 30px 30px 20px 30px;
+    font-size: 14px;
+}
+.box-4 .bubble {
+    font-size: 40px;
+}
+
+/*-------------end Of Customer review-----------*/
+/*-------------Footer-----------*/
+.footer {
+    background-color: var(--text-color-2);
+    margin-top: 100px;
+}
+.container-4 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+.foot-title {
+    font-family: var(--font-2);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.col-1 {
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact {
+    margin-bottom: 10px;
+}
+.contact ion-icon {
+    position: relative;
+    top: 3px;
+    font-size: 18px;
+}
+.col-2 {
+    flex-basis: 40%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.col-2 p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.col-2 a {
+    margin: 0 4px;
+}
+.col-2 ion-icon {
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+    color: var(--background-color-1);
+    border-radius: 50%;
+    background-color: var(--background-color-2);
+    padding: 6px;
+}
+.col-3 {
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.col-3 p {
+    margin: 10px;
+}
+hr {
+    border: none;
+    background-color: var(--background-color-2);
+    height: 2px;
+    margin: 40px 20px;
+}
+.copyright {
+    text-align: center;
+    margin: 20px;
+    font-weight: 900;
+}
+form{
+width: 50px;
+}
+input{
+    width: 260px;
+}

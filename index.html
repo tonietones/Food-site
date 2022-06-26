@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="book.html">
+    <title>LOREM | Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+          <div class="logo">Lorem</div>
+          <div class="toggle" id="MenuItems">
+            <div class="navlinks">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="icons">
+              <a href=""><ion-icon name="person"></ion-icon></a>
+              <a href=""><ion-icon name="cart"></ion-icon></a>
+              <a href=""><ion-icon name="search"></ion-icon></a>
+              <a href="" class="order">Order online</a>
+            </div>
+          </div>
+          <ion-icon
+            name="menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          ></ion-icon>
+        </div>
+        <!-- END OF NAVBAR -->
+        <div class="intro">
+          <div class="intro-text">
+            <h1>Fast Food Restaurant</h1>
+            <p>
+              Circle 287 designed this brunch store! kindly place your orders!
+              😅
+            </p>
+            <a href="" class="order">Order now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--------------Discount Menu----------->
+    <div class="container-2">
+      <div class="title"><h1>Meal of the day</h1></div>
+      <div class="row">
+        <div class="box">
+          <div class="photo">
+            <img src="/images/deals of the day 1.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Deluxe super</h3>
+            <p>N 5,500.00</p>
+            <div class="button">
+              <a href="" class="order"
+                >Order now <ion-icon name="cart"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="photo">
+            <img src="./images/deals of the day 2.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Deluxe heaven</h3>
+            <p>N 5,000.00</p>
+            <div class="button">
+              <a href="" class="order"
+                >Order now <ion-icon name="cart"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------end of Discount Menu----------->
+
+    <!--------------Mini Menu----------->
+    <div class="container-2">
+      <div class="title"><h1>Mini Menu</h1></div>
+      <div class="row">
+        <div class="box-2">
+          <div class="img-menu">
+            <img src="./images/M1.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Pizza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              sapiente at iste eos rem aliquam odio fugiat reiciendis maxime
+              alias!
+            </p>
+          </div>
+          <div class="amount">
+            <p>N 1,500</p>
+            <a href="">
+              <ion-icon name="cart"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="img-menu">
+            <img src="./images/M2.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Pizza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              sapiente at iste eos rem aliquam odio fugiat reiciendis maxime
+              alias!
+            </p>
+          </div>
+          <div class="amount">
+            <p>N 1,500</p>
+            <a href="">
+              <ion-icon name="cart"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="img-menu">
+            <img class="small-img" src="./images/M3.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Pasta</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              sapiente at iste eos rem aliquam odio fugiat reiciendis maxime
+              alias!
+            </p>
+          </div>
+          <div class="amount">
+            <p>N 1,500</p>
+            <a href="">
+              <ion-icon name="cart"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box-2">
+          <div class="img-menu">
+            <img class="small-img" src="./images/M5.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Fries</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              sapiente at iste eos rem aliquam odio fugiat reiciendis maxime
+              alias!
+            </p>
+          </div>
+          <div class="amount">
+            <p>N 1,500</p>
+            <a href="">
+              <ion-icon name="cart"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="img-menu">
+            <img src="./images/M6.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              sapiente at iste eos rem aliquam odio fugiat reiciendis maxime
+              alias!
+            </p>
+          </div>
+          <div class="amount">
+            <p>N 1,500</p>
+            <a href="">
+              <ion-icon name="cart"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="img-menu">
+            <img src="./images/M7.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              sapiente at iste eos rem aliquam odio fugiat reiciendis maxime
+              alias!
+            </p>
+          </div>
+          <div class="amount">
+            <p>N 1,500</p>
+            <a href="">
+              <ion-icon name="cart"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-button">
+        <a href="" class="order">View More</a>
+      </div>
+    </div>
+    <!--------------end of Mini Menu----------->
+    <!--------------mini About----------->
+    <aside>
+      <div class="container-2">
+        <div class="row-2">
+          <div class="box-3">
+            <img src="./images/about-img.png" alt="" />
+          </div>
+          <div class="box-3">
+            <h1>We are Lorem</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum eum,
+              nihil repudiandae quas amet, similique optio veniam impedit enim,
+              perspiciatis quos laudantium labore officiis repellendus dolore ut
+              et aut magnam omnis error eos dignissimos. Ratione assumenda enim
+              nostrum! Exercitationem, natus!
+            </p>
+            <div class="mini-button">
+              <a href="" class="order">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!--------------end of mini About----------->
+    <!--------------Customer's review----------->
+    <div class="container-2">
+      <div class="title">
+        <h1>Customer's Review</h1>
+      </div>
+      <div class="row">
+        <div class="box-4">
+          <ion-icon class="bubble" name="chatbubbles"></ion-icon>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            libero illo fugit quo temporibus eaque iste sed accusamus natus
+            nostrum?
+          </p>
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+          <img src="./images/user-1.png" alt="" />
+          <h3>Sara Parker</h3>
+        </div>
+        <div class="box-4">
+          <ion-icon class="bubble" name="chatbubbles"></ion-icon>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            libero illo fugit quo temporibus eaque iste sed accusamus natus
+            nostrum?
+          </p>
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+          <img src="./images/user-2.png" alt="" />
+          <h3>Mike Davids</h3>
+        </div>
+        <div class="box-4">
+          <ion-icon class="bubble" name="chatbubbles"></ion-icon>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            libero illo fugit quo temporibus eaque iste sed accusamus natus
+            nostrum?
+          </p>
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+          <img src="./images/user-3.png" alt="" />
+          <h3>Jessica hills</h3>
+        </div>
+      </div>
+    </div>
+    <!--------------end of Customer's review----------->
+    <!--------------FFOOTER----------->
+    <div class="footer">
+      <div class="container-4">
+        <div class="row">
+          <div class="col-1">
+            <h3 class="foot-title">Contact us</h3>
+            <ul>
+              <li class="contact">
+                <a href=""><ion-icon name="location"></ion-icon> Location</a>
+              </li>
+              <li class="contact">
+                <a href=""
+                  ><ion-icon name="call"></ion-icon> Call +234 814 022 6605</a
+                >
+              </li>
+              <li class="contact">
+                <a href=""
+                  ><ion-icon name="mail"></ion-icon> Email: Lorem@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h3 class="foot-title">Lorem</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              illo atque fuga magni molestias eum, id sed rem reprehenderit quo.
+            </p>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+          </div>
+          <div class="col-3">
+            <h3 class="foot-title">Opening hours</h3>
+            <p>Everyday</p>
+            <p>10:00am to 10:00pm</p>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>&copy; Circle-278 - 2022 - AltSchool</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "700px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
